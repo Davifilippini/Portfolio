@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="./img/favicon.png">
+  <title>Meu Portfolio | Davi Filippini</title>
+</head>
+
+<body>
+
+  <div class="particulas"></div>
+  <nav class="navegacao">
+    <ul class="menu">
+      <li>
+        <a href="#inicio" class="menu-link">Inicio</a>
+      </li>
+      <li>
+        <a href="#sobre" class="menu-link">Sobre</a>
+      </li>
+      <li>
+        <a href="#projetos" class="menu-link">Projetos</a>
+      </li>
+      <li>
+        <a href="#contatos" class="menu-link">Contato</a>
+      </li>
+    </ul>
+  </nav>
+
+  <main id="inicio" class="cabecalho">
+
+    <img src="./img/minha_foto.jpeg" alt="Foto de Davi Filippini" class="foto-perfil">
+    <h1>Davi Filippini</h1>
+    <p class="cabecalho-sub-titulo">Desenvolvedor Full stack</p>
+
+
+  </main>
+
+  <section id="sobre" class="sobre">
+    <h2 class="sobre-titulo">Sobre Mim</h2>
+
+    <div class="sobre-caixa">
+      <p class="sobre-paragrafo">Olá! Me chamo Davi Filippini, tenho 21 anos e sou um desenvolvedor full stack em início
+        de carreira, mas com muita vontade de aprender e evoluir constantemente. Desde que tive meu primeiro contato com
+        a programação, descobri uma paixão por transformar ideias em código e criar soluções que fazem a diferença.
+        Estou sempre buscando novos conhecimentos, experimentando tecnologias e enfrentando desafios que me ajudem a
+        crescer como profissional. Tenho me dedicado a estudar tanto o front-end quanto o back-end, com foco em
+        construir aplicações funcionais, organizadas e com boa experiência para o usuário.
+        Este portfólio representa o começo da minha trajetória no desenvolvimento, e compartilho aqui meus projetos,
+        estudos e experiências com muito orgulho. Meu objetivo é seguir me aprimorando, contribuindo com equipes e,
+        principalmente, nunca parar de aprender.</p>
+    </div>
+  </section>
+
+  <section id="projetos" class="projetos">
+    <h2 class="projetos-titulo">Meus Projetos</h2>
+
+    <div class="projetos-caixa">
+      <div class="projetos-card">
+        <a href="https://davifilippini.github.io/projeto-mario-bros">
+          <img src="./img/projeto1.png" alt="Projeto 1" class="projetos-imagem">
+        </a>
+        <div class="caixa-textos-projeto">
+          <h3 class="info-projetos">Super Mario Bros - O Filme</h3>
+          <p class="paragrafo-projetos">Um site criado por mim em um intensivão de programação de uma semana, no lançamento do filme do Super Mario Bros, como projeto dessa semana Dev.</p>
+        </div>
+      </div>
+
+      <div class="projetos-card">
+        <img src="./img/projeto2.png" alt="Projeto 2" class="projetos-imagem">
+        <div class="caixa-textos-projeto">
+          <h3 class="info-projetos">Pagina de viagens</h3>
+          <p class="paragrafo-projetos">Uma pagina interativa com roteiros de viagem mais cobicados do mundo.</p>
+        </div>
+      </div>
+
+      <div class="projetos-card">
+        <img src="./img/projeto3.png" alt="Projeto 3" class="projetos-imagem">
+        <div class="caixa-textos-projeto">
+          <h3 class="info-projetos">Microsoft</h3>
+          <p class="paragrafo-projetos">Pagina da microsoft criada para demonstrar conhecimentos em diversas
+            tecnologias.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="contatos" class="contatos">
+    <h2 class="contatos-titulo">Entre em Contato</h2>
+
+    <form class="formulario-contato" id="formulario" onsubmit="enviarWhats(event)">
+      <div class="grupo-form">
+        <input placeholder="Nome" class="campo-form" id="nome">
+      </div>
+
+      <div class="grupo-form">
+        <textarea class=" campo-form" placeholder="Digite sua Mensagem" rows="6" id="mensagem"></textarea>
+      </div>
+
+      <button type="submit" class="botao-form">Enviar WhatsApp</button>
+
+    </form>
+
+  </section>
+
+  <script>
+
+    function enviarWhats(event) {
+      event.preventDefault()
+
+      const nome = document.getElementById('nome').value;
+      const mensagem = document.getElementById('mensagem').value;
+      const telefone = '5514988331171'
+
+      const texto = `Ola! Me chamo ${nome}, ${mensagem}`
+      const msgFormatada = encodeURIComponent(texto)
+
+      const url = `https://wa.me/${telefone}?text=${msgFormatada}`
+
+      window.open(url, '_blank')
+
+    }
+
+  </script>
+</body>
+
+</html>
