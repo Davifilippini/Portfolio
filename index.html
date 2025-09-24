@@ -256,7 +256,6 @@
           <div class="item"><img src="./img/item1_7.png" alt=""></div>
         </div>
 
-        <!-- clone para loop infinito -->
         <div class="faixa">
           <div class="item"><img src="./img/item1_1.png" alt=""></div>
           <div class="item"><img src="./img/item1_2.png" alt=""></div>
@@ -306,7 +305,6 @@
 
     }
 
-    // Script para o Menu Hambúrguer
     const menuHamburguer = document.getElementById('menu-hamburguer');
     const menuLista = document.getElementById('menu-lista');
     const menuLinks = document.querySelectorAll('.menu-link');
@@ -315,7 +313,6 @@
       menuLista.classList.toggle('menu-aberto');
     });
 
-    // Fecha o menu ao clicar em um link
     menuLinks.forEach(link => {
       link.addEventListener('click', () => {
         menuLista.classList.remove('menu-aberto');
@@ -324,11 +321,12 @@
 
   </script>
 
-  <footer class="rodape">
+  <footer class="rodape" id="contato">
   <div class="rodape-container">
-    <div class="rodape-esquerda">
+    
+    <div class="rodape-sobre">
       <h3>Davi Filippini</h3>
-      <p>Desenvolvedor Full Stack apaixonado por tecnologia e inovação.</p>
+      <p>Desenvolvedor Full Stack apaixonado por tecnologia e inovação, criando soluções digitais que fazem a diferença.</p>
     </div>
 
     <div class="rodape-links">
@@ -338,26 +336,26 @@
         <li><a href="#sobre">Sobre</a></li>
         <li><a href="#experiencias">Experiências</a></li>
         <li><a href="#projetos">Projetos</a></li>
-        <li><a href="#contatos">Contato</a></li>
       </ul>
     </div>
 
     <div class="rodape-contato">
       <h4>Contato</h4>
       <ul>
-        <li><i class="fas fa-envelope"></i> davifilippini56@gmail.com</li>
+        <li><i class="fas fa-envelope"></i> davifilipini@outlook.com</li>
         <li><i class="fas fa-phone"></i> +55 (14) 98833-1171</li>
-        <li><i class="fas fa-map-marker-alt"></i> Bauru - SP</li>
+        <li><i class="fas fa-map-marker-alt"></i> Bauru - SP, Brasil</li>
       </ul>
     </div>
+
   </div>
 
   <div class="rodape-final">
-    <p>&copy; 2025 - Desenvolvido por <span>Davi Filippini</span>. Todos os direitos reservados.</p>
+    <p>© 2025 <span id="ano-atual"></span> <span>Davi Filippini</span>. Todos os direitos reservados.</p>
     <div class="rodape-redes">
-      <a href="https://github.com/Davifilippini" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/davi-filippini-79358b201" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-      <a href="https://www.instagram.com/davi_filippini" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/davi-filippini-79358b201" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://github.com/Davifilippini" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://www.instagram.com/davi_filippini" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
     </div>
   </div>
 </footer>
