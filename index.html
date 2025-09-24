@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="./img/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <title>Meu Portfolio | Davi Filippini</title>
+</head>
+
+<body>
+
+  <div class="particulas"></div>
+  <nav class="navegacao">
+    <button class="menu-hamburguer" id="menu-hamburguer" aria-label="Abrir menu">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <ul class="menu" id="menu-lista">
+      <li>
+        <a href="#inicio" class="menu-link">Inicio</a>
+      </li>
+      <li>
+        <a href="#sobre" class="menu-link">Sobre</a>
+      </li>
+      <li>
+        <a href="#experiencias" class="menu-link">Experiencias</a>
+      </li>
+      <li>
+        <a href="#projetos" class="menu-link">Projetos</a>
+      </li>
+      <li>
+        <a href="#contatos" class="menu-link">Contato</a>
+      </li>
+    </ul>
+  </nav>
+
+  <main id="inicio" class="cabecalho">
+
+    <img src="./img/minha_foto.jpeg" alt="Foto de Davi Filippini" class="foto-perfil">
+    <h1><span>Davi</span> <span>Filippini</span></h1>
+    <p class="cabecalho-sub-titulo">Desenvolvedor Full stack</p>
+
+    <div class="botoes">
+      <a href="./docs/curriculo.pdf" class="curriculo" download>Baixar Currículo</a>
+      <a class="btn2" href="#contatos">Entre em Contato</a>
+    </div>
+
+    <div class="seta-baixo">
+      <i class="fas fa-chevron-down"></i>
+    </div>
+
+    <div class="botoes-redes">
+      <a class="facebook" href="https://web.facebook.com/davi.filippini.14?locale=pt_BR" target="_blank"><i
+          class="fab fa-facebook-f"></i></a>
+      <a class="instagram" href="https://www.instagram.com/davi_filippini" target="_blank"><i
+          class="fab fa-instagram"></i></a>
+      <a class="linkedin" href="https://www.linkedin.com/in/davi-filippini-79358b201" target="_blank"><i
+          class="fab fa-linkedin-in"></i></a>
+      <a class="github" href="https://github.com/Davifilippini" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+
+  </main>
+
+  <section id="sobre" class="secao-sobre">
+
+    <div class="sobre-container">
+      <h2 class="sobre-titulo">Sobre Mim</h2>
+
+      <div class="sobre-conteudo">
+        <div class="sobre-placeholder-imagem">
+          <i class="fas fa-code"></i>
+        </div>
+        <div class="sobre-texto">
+          <p>Olá! Me chamo Davi Filippini, tenho 22 anos e sou um desenvolvedor full stack em início de carreira, mas
+            com muita vontade de aprender e evoluir constantemente.</p>
+          <p>Desde que tive meu primeiro contato com a programação, descobri uma paixão por transformar ideias em código
+            e criar soluções que fazem a diferença. Estou sempre buscando novos conhecimentos e enfrentando desafios que
+            me ajudem a crescer como profissional.</p>
+          <p>Este portfólio representa o começo da minha trajetória no desenvolvimento, e compartilho aqui meus projetos
+            com muito orgulho. Meu objetivo é seguir me aprimorando, contribuindo com equipes e, principalmente, nunca
+            parar de aprender.</p>
+        </div>
+      </div>
+
+      <div class="sobre-detalhes">
+        <div class="sobre-lista">
+          <h3>Minhas Skills</h3>
+          <ul class="lista-habilidades">
+            <li class="habilidade-item">
+              <i class="devicon-html5-plain-wordmark"></i>
+              <span>HTML5 & CSS3</span>
+            </li>
+            <li class="habilidade-item">
+              <i class="devicon-javascript-plain"></i>
+              <span>JavaScript (ES6+)</span>
+            </li>
+            <li class="habilidade-item">
+              <i class="devicon-react-original"></i>
+              <span>React.js</span>
+            </li>
+            <li class="habilidade-item">
+              <i class="devicon-nodejs-plain"></i>
+              <span>Node.js</span>
+            </li>
+            <li class="habilidade-item">
+              <i class="fas fa-database"></i>
+              <span>SQL & NoSQL</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="sobre-lista">
+          <h3>Ferramentas</h3>
+          <ul class="lista-habilidades">
+            <li class="habilidade-item">
+              <i class="devicon-github-original"></i>
+              <span>Git & GitHub</span>
+            </li>
+            <li class="habilidade-item">
+              <i class="devicon-vscode-plain"></i>
+              <span>VS Code</span>
+            </li>
+            <li class="habilidade-item">
+              <i class="devicon-figma-plain"></i>
+              <span>Figma</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="experiencias" class="secao-experiencias">
+    <h2 class="experiencias-titulo">Minhas Experiências</h2>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h3 class="timeline-titulo-cargo">Estagiário - Triagem de Celulares</h3>
+          <div class="timeline-meta">
+            <span class="empresa">Outlet do Celular</span>
+            <span class="periodo">Jun 2021 - Jun 2022</span>
+          </div>
+          <p class="timeline-descricao">
+            - Triagem de aparelhos celulares.
+            - Contagem de estoque.
+            - Alimentação da planilha dos aparelhos para a manutenção dos mesmos.
+            - Organização dos aparelhos celulares
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h3 class="timeline-titulo-cargo">Estagiário CRM</h3>
+          <div class="timeline-meta">
+            <span class="empresa">Proeste Nissan</span>
+            <span class="periodo">Fev 2023 - Ago 2023</span>
+          </div>
+          <p class="timeline-descricao">
+            Realização do primeiro atendimento ao cliente via redes sociais e Whatsapp, qualificação dos interesses
+            apresentados e direcionamento para a equipe de vendas.
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h3 class="timeline-titulo-cargo">Estagiário de Soluções Digitais</h3>
+          <div class="timeline-meta">
+            <span class="empresa">Paschoalotto</span>
+            <span class="periodo">Mai 2024 - Jan 2025</span>
+          </div>
+          <p class="timeline-descricao">
+            - Acompanhamento de indicadores junto aos fornecedores;
+            - Auxílio na confecção e disparo de fomentações de SMS e E-mail Marketing
+            - Confeccionar a base de acionamento das ligações de Agente Virtual;
+            - Suporte ao time de Assistentes e Analistas na criação das visões e análises de negócio
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h3 class="timeline-titulo-cargo">Assistente de TI</h3>
+          <div class="timeline-meta">
+            <span class="empresa">Grupo HS - Claro | Motorola</span>
+            <span class="periodo">Jan 2025 - O momento</span>
+          </div>
+          <p class="timeline-descricao">
+            - Suporte Técnico e Resolução de Problemas para mais de 68 lojas (Help Desk)
+            - Gestão de Infraestrutura e Ativos de TI
+            - Montagem e manutenção de computadores
+            - Apoio em projetos e melhoria contínua
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="projetos" class="projetos">
+    <h2 class="projetos-titulo">Meus Projetos</h2>
+
+    <div class="projetos-caixa">
+      <div class="projetos-card">
+        <a href="https://davifilippini.github.io/projeto-mario-bros" target="_blank">
+          <img src="./img/projeto1.png" alt="Projeto 1" class="projetos-imagem">
+        </a>
+        <div class="caixa-textos-projeto">
+          <h3 class="info-projetos">Super Mario Bros - O Filme</h3>
+          <p class="paragrafo-projetos">Um site criado por mim em um intensivão de programação de uma semana, no
+            lançamento do filme do Super Mario Bros, como projeto dessa semana Dev.</p>
+        </div>
+      </div>
+
+      <div class="projetos-card">
+        <img src="./img/projeto2.png" alt="Projeto 2" class="projetos-imagem">
+        <div class="caixa-textos-projeto">
+          <h3 class="info-projetos">DevClub Store</h3>
+          <p class="paragrafo-projetos">Página criada com o DevClub, com um design moderno e sofisticado que proporciona
+            a experiência de compra premium e imersiva de uma loja de tecnologia de ponta. </p>
+        </div>
+      </div>
+      
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="container-carrossel">
+      <div class="carrossel">
+        <div class="faixa">
+          <div class="item"><img src="./img/item1_1.png" alt=""></div>
+          <div class="item"><img src="./img/item1_2.png" alt=""></div>
+          <div class="item"><img src="./img/item1_3.png" alt=""></div>
+          <div class="item"><img src="./img/item1_4.png" alt=""></div>
+          <div class="item"><img src="./img/item1_5.png" alt=""></div>
+          <div class="item"><img src="./img/item1_6.png" alt=""></div>
+          <div class="item"><img src="./img/item1_7.png" alt=""></div>
+        </div>
+
+        <div class="faixa">
+          <div class="item"><img src="./img/item1_1.png" alt=""></div>
+          <div class="item"><img src="./img/item1_2.png" alt=""></div>
+          <div class="item"><img src="./img/item1_3.png" alt=""></div>
+          <div class="item"><img src="./img/item1_4.png" alt=""></div>
+          <div class="item"><img src="./img/item1_5.png" alt=""></div>
+          <div class="item"><img src="./img/item1_6.png" alt=""></div>
+          <div class="item"><img src="./img/item1_7.png" alt=""></div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <section id="contatos" class="contatos">
+    <h2 class="contatos-titulo">Entre em Contato</h2>
+
+    <form class="formulario-contato" id="formulario" onsubmit="enviarWhats(event)">
+      <div class="grupo-form">
+        <input placeholder="Nome" class="campo-form" id="nome">
+      </div>
+
+      <div class="grupo-form">
+        <textarea class=" campo-form" placeholder="Digite sua Mensagem" rows="6" id="mensagem"></textarea>
+      </div>
+
+      <button type="submit" class="botao-form">Enviar WhatsApp</button>
+
+    </form>
+
+  </section>
+
+  <script>
+
+    function enviarWhats(event) {
+      event.preventDefault()
+
+      const nome = document.getElementById('nome').value;
+      const mensagem = document.getElementById('mensagem').value;
+      const telefone = '5514988331171'
+
+      const texto = `Ola! Me chamo ${nome}, ${mensagem}`
+      const msgFormatada = encodeURIComponent(texto)
+
+      const url = `https://wa.me/${telefone}?text=${msgFormatada}`
+
+      window.open(url, '_blank')
+
+    }
+
+    const menuHamburguer = document.getElementById('menu-hamburguer');
+    const menuLista = document.getElementById('menu-lista');
+    const menuLinks = document.querySelectorAll('.menu-link');
+
+    menuHamburguer.addEventListener('click', () => {
+      menuLista.classList.toggle('menu-aberto');
+    });
+
+    menuLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        menuLista.classList.remove('menu-aberto');
+      });
+    });
+
+  </script>
+
+  <footer class="rodape">
+  <div class="rodape-container">
+    
+    <div class="rodape-sobre">
+      <h3>Davi Filippini</h3>
+      <p>Desenvolvedor Full Stack apaixonado por tecnologia e inovação.</p>
+    </div>
+
+    <div class="rodape-links">
+      <h4>Navegação</h4>
+      <ul>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#experiencias">Experiências</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contatos">Contato</a></li>
+      </ul>
+    </div>
+
+    <div class="rodape-contato">
+      <h4>Contato</h4>
+      <ul>
+        <li><i class="fas fa-envelope"></i> davifilipini@gmail.com</li>
+        <li><i class="fas fa-phone"></i> +55 (14) 98833-1171</li>
+        <li><i class="fas fa-map-marker-alt"></i> Bauru - SP</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="rodape-final">
+    <p>© 2025 - Desenvolvido por <span>Davi Filippini</span>. Todos os direitos reservados.</p>
+    <div class="rodape-redes">
+      <a href="https://www.linkedin.com/in/davi-filippini-79358b201" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://github.com/Davifilippini" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://www.instagram.com/davi_filippini" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+
+</html>
