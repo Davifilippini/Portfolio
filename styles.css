@@ -22,6 +22,9 @@ html {
 body {
     background-color: var(--escuro);
     color: var(--claro);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .navegacao {
@@ -76,7 +79,6 @@ body {
     z-index: 200;
 }
 
-/* Menu padrão (desktop) */
 .menu {
     display: flex;
     justify-content: center;
@@ -556,7 +558,6 @@ h1 {
     margin: 0 auto;
 }
 
-/* A linha vertical da timeline */
 .timeline::after {
     content: '';
     position: absolute;
@@ -565,22 +566,18 @@ h1 {
     top: 0;
     bottom: 0;
     left: 20px;
-    /* Posição da linha à esquerda */
     margin-left: -1.5px;
 }
 
 .timeline-item {
     padding: 1rem 1rem 2rem 50px;
-    /* Espaçamento para o conteúdo não sobrepor a linha */
     position: relative;
 }
 
-/* O círculo na linha da timeline */
 .timeline-item::before {
     content: '';
     position: absolute;
     left: 11px;
-    /* Centraliza o círculo na linha */
     top: 22px;
     width: 18px;
     height: 18px;
@@ -651,7 +648,6 @@ h1 {
     position: relative;
     width: 100%;
     height: 80px;
-    /* altura fixa do carrossel */
 }
 
 .faixa {
@@ -661,13 +657,11 @@ h1 {
     top: 50%;
     transform: translateY(-50%);
     left: 100%;
-    /* << ADICIONE ESTA LINHA */
     animation: autoRun 15s linear infinite;
 }
 
 .faixa:nth-child(2) {
     animation-delay: 7.5s;
-    /* entra logo depois da primeira */
 }
 
 .item {
@@ -693,14 +687,13 @@ h1 {
     filter: grayscale(0);
     transform: scale(1.2);
     color: #00d8ff;
-    /* destaque no hover */
 }
 
 .rodape {
     background: var(--maisEscuro);
     color: var(--claro);
     padding: 3rem 2rem 1rem;
-    margin-top: 4rem;
+    margin-top: auto; 
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -753,8 +746,9 @@ h1 {
     margin-top: 2rem;
     padding-top: 1rem;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between; 
     align-items: center;
+    flex-wrap: wrap; 
     gap: 1rem;
     font-size: 0.9rem;
 }
@@ -780,7 +774,6 @@ h1 {
     transform: scale(1.2);
 }
 
-/* animação estilo "sempre rodando" */
 @keyframes autoRun {
     from {
         left: 100%;
@@ -791,7 +784,6 @@ h1 {
     }
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
     .item {
         width: 80px;
@@ -816,8 +808,6 @@ h1 {
     }
 }
 
-
-/* Responsividade para a seção de experiências */
 @media (max-width: 768px) {
     .secao-experiencias {
         padding: 4rem 1rem;
@@ -829,17 +819,14 @@ h1 {
 
     .timeline::after {
         left: 15px;
-        /* Ajusta a linha para telas menores */
     }
 
     .timeline-item {
         padding-left: 40px;
-        /* Ajusta o espaçamento do conteúdo */
     }
 
     .timeline-item::before {
         left: 6px;
-        /* Ajusta a posição do círculo */
         width: 16px;
         height: 16px;
     }
@@ -897,7 +884,6 @@ h1 {
     z-index: 110;
 }
 
-/* --- Estilos base para o menu hambúrguer (escondido no desktop) --- */
 .menu-hamburguer {
     display: none;
     background: none;
@@ -908,11 +894,6 @@ h1 {
     z-index: 110;
 }
 
-/* ==================================
-   ESTILOS DE RESPONSIVIDADE FINAIS
-   ================================== */
-
-/* --- Estilos base para o menu hambúrguer (escondido no desktop) --- */
 .menu-hamburguer {
     display: none;
     background: none;
@@ -923,32 +904,29 @@ h1 {
     z-index: 110;
 }
 
-/* --- Telas de Tablet e Celular (a partir de 900px para baixo) --- */
 @media (max-width: 900px) {
     
-    /* --- NAVEGAÇÃO E MENU --- */
     .navegacao {
-        position: fixed; /* Fixa a barra no topo da tela */
+        position: fixed; 
         top: 0;
         left: 0;
         width: 100%;
         display: flex;
         justify-content: flex-end;
         padding: 1rem 1.5rem;
-        background: var(--escuro); /* Fundo sólido para não ser transparente */
-        z-index: 1000; /* Garante que fique acima de todo o conteúdo */
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Linha sutil de separação */
+        background: var(--escuro); 
+        z-index: 1000;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1); 
     }
 
     .menu-hamburguer {
-        display: block; /* Mostra o botão */
+        display: block;
     }
 
-    /* Painel do menu que desliza da esquerda */
     .menu {
         position: fixed;
         top: 0;
-        left: -100%; /* Começa fora da tela */
+        left: -100%;
         width: 80%;
         max-width: 300px;
         height: 100vh;
@@ -962,19 +940,18 @@ h1 {
     }
 
     .menu.menu-aberto {
-        left: 0; /* Mostra o menu */
+        left: 0;
     }
     
     .menu-link {
         font-size: 1.5rem;
     }
 
-    /* --- TELA DE INÍCIO (HERO SECTION) --- */
     .cabecalho {
-        min-height: 100vh; /* Ocupa 100% da altura da tela */
-        padding-top: 80px;  /* Espaço no topo para a barra de navegação não sobrepor */
+        min-height: 100vh;
+        padding-top: 80px; 
         padding-bottom: 3rem;
-        justify-content: center; /* Centraliza todo o conteúdo verticalmente */
+        justify-content: center;
     }
 
     .foto-perfil {
@@ -1005,7 +982,7 @@ h1 {
     }
 
     .botoes a {
-        width: 80%; /* Faz os botões terem a mesma largura */
+        width: 80%;
         text-align: center;
         margin-left: 0;
         margin-right: 0;
@@ -1018,12 +995,10 @@ h1 {
         gap: 1.5rem;
     }
 
-    /* --- CARROSSEL --- */
     .container-carrossel {
-        display: none; /* Esconde completamente o carrossel em telas menores */
+        display: none; 
     }
     
-    /* --- AJUSTES GERAIS --- */
     .secao-sobre, .secao-experiencias, .projetos, .contatos {
         padding: 4rem 1.5rem;
     }
